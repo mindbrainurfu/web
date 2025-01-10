@@ -12,7 +12,7 @@ DATA_URL = ('https://s3-us-west-2.amazonaws.com/'
 st.audio_input("Записать аудио:")
 st.markdown("<hr>", unsafe_allow_html=True)
 st.subheader("или:")
-st.file_uploader("Загрузить аудио:")
+uploaded_file = st.file_uploader("Загрузить аудио:", type=['mp3','wav'])
 
 
 
